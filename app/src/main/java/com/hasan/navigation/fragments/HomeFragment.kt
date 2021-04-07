@@ -17,14 +17,14 @@ class HomeFragment : Fragment(R.layout.fragment_home){
 
         btn_view_balance.setOnClickListener{
 
-            //// Navigate using action (3)
+            //// Navigate using action object (3)
             val action = HomeFragmentDirections.actionHomeFragmentToViewBalanceFragment()
             navController.navigate(action)
 
             // Navigate using direct action id (2)
             // navController.navigate(R.id.action_homeFragment_to_viewBalanceFragment)
 
-            // Navigate using fragment ID (1)
+            // Navigate using destination Id (1)
             // navController.navigate(R.id.viewBalanceFragment)
         }
 

@@ -16,15 +16,34 @@ class HomeFragment : Fragment(R.layout.fragment_home){
         val navController = findNavController()
 
         btn_view_balance.setOnClickListener{
-            navController.navigate(R.id.action_homeFragment_to_viewBalanceFragment)
+
+            //// Navigate using action (3)
+            val action = HomeFragmentDirections.actionHomeFragmentToViewBalanceFragment()
+            navController.navigate(action)
+
+            // Navigate using direct action id (2)
+            // navController.navigate(R.id.action_homeFragment_to_viewBalanceFragment)
+
+            // Navigate using fragment ID (1)
+            // navController.navigate(R.id.viewBalanceFragment)
         }
 
         btn_transactions.setOnClickListener{
-            navController.navigate(R.id.action_homeFragment_to_viewTransactionFragment)
+
+            val action = HomeFragmentDirections.actionHomeFragmentToViewTransactionFragment()
+            navController.navigate(action)
+
+            // Navigate using direct action id
+            //navController.navigate(R.id.action_homeFragment_to_viewTransactionFragment)
         }
 
         btn_send_money.setOnClickListener{
-            navController.navigate(R.id.action_homeFragment_to_chooseReceiverFragment)
+
+            val action = HomeFragmentDirections.actionHomeFragmentToChooseReceiverFragment()
+            navController.navigate(action)
+
+            // Navigate using direct action id
+            //navController.navigate(R.id.action_homeFragment_to_chooseReceiverFragment)
         }
     }
 }

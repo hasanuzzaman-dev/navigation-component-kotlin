@@ -57,7 +57,11 @@
         android:id="@+id/viewTransactionFragment"
         android:name="com.hasan.navigation.views.fragments.ViewTransactionFragment"
         android:label="fragment_view_transaction"
-        tools:layout="@layout/fragment_view_transaction" />
+        tools:layout="@layout/fragment_view_transaction" >
+        <action
+            android:id="@+id/action_viewTransactionFragment_to_sendCashFragment"
+            app:destination="@id/sendCashFragment" />
+    </fragment>
     <fragment
         android:id="@+id/sendCashFragment"
         android:name="com.hasan.navigation.views.fragments.SendCashFragment"

@@ -1,9 +1,8 @@
-package com.hasan.navigation.fragments
+package com.hasan.navigation.views.fragments
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import com.hasan.navigation.R
 import kotlinx.android.synthetic.main.fragment_home.*
